@@ -2,9 +2,10 @@
 import sys
 
 # Check if arguments are passed, excluding the script name
-if len(sys.argv) > 1:
+length = len(sys.argv)
+if length > 1:
     # print("Arguments passed to the script:")
-    for i, arg in enumerate(sys.argv[0:], start=1):
-        print(arg)
+    for i in range(1, length, 1):
+        print(sys.argv[i])
 else:
     print("No additional arguments passed.")
